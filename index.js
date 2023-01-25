@@ -1,21 +1,20 @@
-// import readline module
-const readline = require("readline");
+import readline from 'readline'
 
 // create interface for input and output
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
-});
+})
 
 // create empty user input
-let userInput = "";
+let userInput = ''
 
 // question user to enter name
-rl.question("What is your name\n", function (string) {
-  userInput = string;
+rl.question('What is your name: ', function (string) {
+  userInput = string
 
-  console.log("Your name is " + userInput);
+  console.log('Your name is ' + userInput)
 
   // close input stream
-  rl.close();
-});
+  rl.close()
+})
